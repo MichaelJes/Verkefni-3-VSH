@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="is">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Grindakerfi Pure CSS">
+        <meta name="author" content="">
+
+        <title>VSH2A verkefni 1</title>
+
+        <!-- Pure CDN - Content Distribution Network-->
+            <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+        <!--<![endif]-->
+        
+    </head>
+     <style>
+    .pure-g > div {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .l-box {
+        padding: 1em;
+        border: 1px solid yellow;
+        margin:0;
+    }
+    .K-box {
+        padding: 0.5em;
+
+        margin:0;
+    }
+
+    .tabs {
+	  position: relative;   
+	  min-height: 400px; /* This part sucks */
+	  clear: both;
+	  margin: 25px 0;
+	}
+	.tab {
+	  float: left;
+	}
+	.tab label {
+	  background: #eee; 
+	  padding: 10px; 
+	  border: 1px solid #ccc; 
+	  margin-left: -1px; 
+	  position: relative;
+	  left: 1px; 
+	}
+	.tab [type=radio] {
+	  display: none;   
+	}
+	.content {
+	  position: absolute;
+	  top: 28px;
+	  left: 0;
+	  background: white;
+	  right: 0;
+	  bottom: 0;
+	  padding: 20px;
+	  border: 1px solid #ccc; 
+	}
+	[type=radio]:checked ~ label {
+	  background: white;
+	  border-bottom: 1px solid white;
+	  z-index: 2;
+	}
+	[type=radio]:checked ~ label ~ .content {
+	  z-index: 1;
+}
+</style>
+    <body>
+    <div class="pure-menu pure-menu-open pure-menu-horizontal">
+    <ul>
+        <li><a href="Verkefni-1.html">VSH2A PureCSS</a></li>
+        <li><a href="Index.html">Forsíða</a></li>
+        <li><a href="Page2.html">Tafla</a></li>
+        <li><a href="Page3.html">Form</a></li>
+        <li><a href="Page4.html">Hnappar</a></li>
+        <li><a href="Page5.html">Myndir</a></li>
+    </ul>
+</div>
+        <header class="pure-g">
+        	<div class="pure-u-1 pure-u-md-12-24 pure-u-lg-10-24 l-box">
+            	<a href="index.html"><img src="img/logo.png" alt="Wisdom Pets. click for home." class=""></a>
+            </div>
+        	<div class="pure-u-1 pure-u-md-12-24 pure-u-lg-14-24 l-box">
+            	<img src="img/animals.jpg" alt="" class="">
+            </div>
+        </header>     
+        <!-- row 2 -->
+        <section class="pure-g">
+	        <article class="pure-u-1 pure-u-md-1 pure-u-lg-16-24">
+            	<!-- nested row 1-->
+            	<section class="pure-g">
+            	    <div class="pure-u-1 pure-u-sm-16-24 pure-u-md-14-24 pure-u-lg-14-24 l-box">
+                    	<h1>Form</h1>
+                    	<p>Wisdom Pet Medicine is a state-of-the-art veterinary hospital,   featuring the latest in diagnostic and surgical equipment, and a staff   of seasoned veterinary specialists in the areas of general veterinary   medicine and surgery, oncology, dermatology, orthopedics, radiology,   ultrasound, and much more. We also have a 24-hour emergency clinic in   the event your pet needs urgent medical care after regular business   hours.</p>
+                    	<p>At Wisdom, we strive to be your pet&rsquo;s medical experts from youth   through the senior years. We build preventative health care plans for   each and every one of our patients, based on breed, age, and sex, so   that your pet receives the most appropriate care at crucial milestones   in his or her life. Our overarching goal is to give your pet the best   shot possible at a long and healthy life, by practicing simple   preventative care. We even provide an online Pet Portal where you can   view all your pet&rsquo;s diagnostic results, treatment plans, vaccination and   diagnostic schedules,  prescriptions, and any other health records.</p>
+            	   </div>
+            	    <div class="pure-u-1 pure-u-sm-8-24 pure-u-md-10-24 pure-u-lg-10-24 l-box">
+                    <img src="img/goldfish.jpg">
+                	</div>
+            	</section>
+            	<!-- nested row 2-->
+	            <section class="pure-g">
+	                <div class="pure-u-1 pure-u-sm-12-24 pure-u-md-12-24 pure-u-lg-6-24 l-box">
+	                    <h4><span class="glyphicon glyphicon-pushpin"></span> Vaccinations</h4>
+	                    <p>Dogs, cats, rats and snakes are susceptible to a variety of illnesses that can be completely prevented by following the appropriate vaccination schedule.</p>
+	                    <p><a href="#" class=" ">Read more >></a></p>
+	                </div>
+	                <div class="pure-u-1 pure-u-sm-12-24 pure-u-md-12-24 pure-u-lg-6-24 l-box">
+	                    <h4><span class="glyphicon glyphicon-ok"></span> Checkups</h4>
+	                    <p>Regular checkups are a key factor in pet wellness, and can often unearth problems that could lead to health issues down the road.  </p>
+	                    <p><a href="#" class=" ">Read more >></a></p>
+	                </div>
+	                <div class="pure-u-1 pure-u-sm-12-24 pure-u-md-12-24 pure-u-lg-6-24 l-box">
+	                    <h4><span class="glyphicon glyphicon-heart"></span> Senior Pets</h4>
+	                    <p>Senior pets generally require more medical attention than their younger counterparts, just as senior humans do. So when is a pet considered “senior”? </p>
+	                    <p><a href="#" class=" ">Read more >></a></p>
+	                </div>
+	                <div class="pure-u-1 pure-u-sm-12-24 pure-u-md-12-24 pure-u-lg-6-24 l-box">
+	            		<h4><span class="glyphicon glyphicon-cutlery"></span> Diet Plans</h4>
+	            		<p>Wisdom veterinarians have all had extensive training in pet nutrition and are your best resources when considering changing your pet’s diet. </p>
+	             		<p><a href="#" class=" ">Read more >></a></p>
+	                 </div>
+	            </section><!-- end nested row -->
+	        </article>
+	        <!-- row 4 -->
+	        <aside class="pure-u-1 pure-u-md-1 pure-u-lg-8-24">
+	         <div class="tabs">
+	         <div class="tab">
+       			<input type="radio" id="tab-1" name="tab-group-1">
+       			<label for="tab-1">Sign in</label>
+       			<div class="content">
+        			<div class="l-box">
+        				<form class="pure-form">
+						    <fieldset class="pure-group">
+						    <input type="text" class="pure-input-1" placeholder="Username"  required>
+						    <input type="password" class="pure-input-1" placeholder="Password"  required>
+						    <input type="email" class="pure-input-1" placeholder="Email" required>
+						    </fieldset>
+						    <fieldset class="pure-group">
+						        <input type="text" class="pure-input-1" placeholder="Another Group">
+						        <input type="text" class="pure-input-1" placeholder="More Stuff">
+						    </fieldset>
+						    <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Sign in</button>
+					 	</form>
+					</div>
+   				</div>
+
+   <div class="tab">
+       <input type="radio" id="tab-2" name="tab-group-1">
+       <label for="tab-2">Register</label>
+       <div class="content">
+       <div class="l-box">
+       <form class="pure-form">
+    <fieldset class"pure-group">
+    		<input id="name" type="text" class="pure-input-1"placeholder="Name">
+    		<input id="name" type="text" class="pure-input-1"placeholder="Address">
+            <input id="name" type="text" class="pure-input-1"placeholder="Location">
+            <input type="password" class="pure-input-1" placeholder="Password"  required>
+            <input id="email" type="email" class="pure-input-1" placeholder="Email Address">         
+           
+      </fieldset>
+        <fieldset class"pure-group">
+          
+            <label for="cb" class="pure-checkbox">I've read the terms and conditions
+            
+            <input id="cb" type="checkbox"> </label>
+    	</fieldset>
+        <button type="submit" class="pure-button pure-button-primary">Submit</button>
+    </form>
+    </div>
+</div>
+       </div> 
+   </div>
+    <div class="tab">
+       <input type="radio" id="tab-3" name="tab-group-1">
+       <label for="tab-3">Source info</label>
+     
+       <div class="content">
+           <p>Þetta eru tabar og form</p>
+       </div> 
+   </div>
+    
+</div>
+
+    </aside><!-- end row 4 -->
+        </section>
+        <!-- row 5 -->
+        <footer class="pure-u-1 l-box">
+            <p><small>This not a real veterinary medicine site, and is not meant to diagnose or offer treatment. Please see your veterinarian for all matters related to your pet's health.</small></p>
+            <p><small>Wisdom Pet Medicine is a training brand owned by lynda.com.</small></p>
+        </footer>
+        <!-- javascript -->
+	    <script src=""></script>
+    </body>
+</html>

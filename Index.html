@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="is">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Grindakerfi Pure CSS">
+        <meta name="author" content="">
+
+
+        <title>VSH2A verkefni 1</title>
+
+        <!-- Pure CDN - Content Distribution Network-->
+            <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+        <!--<![endif]-->
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+
+    <body>
+    <label for="show-menu" class="show-menu">Show Menu</label>
+    <input type="checkbox" id="show-menu" role="button">
+ 
+    <ul id ="menu">
+        <li><a href="Verkefni-1.html">VSH2A PureCSS</a></li>
+        <li><a href="Index.html">Forsíða</a></li>
+        <li><a href="Page2.html">Tafla</a></li>
+        <li><a href="Page3.html">Form</a></li>
+        <li><a href="Page4.html">Hnappar</a></li>
+        <li><a href="Page5.html">Myndir</a></li>
+    </ul>
+
+        <header class="pure-g">
+       
+        	<div class="pure-u-1 pure-u-md-12-24 pure-u-lg-10-24 l-box">
+            	<a href="index.html"><img src="img/logo.png" alt="Wisdom Pets. click for home." class=""></a>
+            
+            </div>
+            
+        	<div class="pure-u-1 pure-u-md-12-24 pure-u-lg-14-24 l-box">
+            	<img src="img/animals.jpg" alt="" class="">
+            
+</div>
+        </header>
+               <style>
+
+    .pure-g > div {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .l-box {
+       padding: 1em;
+        border: 1px solid yellow;
+    }
+    .word
+    {
+        line-height: 1.5;
+            }
+
+
+    aside, section
+    {
+        font-family: 'Open Sans', sans-serif;
+       
+    }
+
+   @media all and (min-width: 48em) {
+  section, aside {
+  line-height: 1.5 }
+  p{
+        font-size: 1em;}
+
+    }
+    @media all and (max-width: 48em) {
+  section, aside {
+  line-height: 1.2 }
+  p{
+        font-size: 0.9em;}
+
+}
+
+@media screen and (max-width : 760px){
+    /*Display 'show menu' link*/
+   
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+}
+img{
+    margin-top:3em; 
+}
+ 
+</style>       
+        <!-- row 2 -->
+        <section class="pure-g">
+	        <article class="pure-u-1 pure-u-sm-1 pure-u-md-16-24 pure-u-lg-18-24">
+            	<!-- nested row 1-->
+            	<section class="pure-g">
+
+            	    <div class="pure-u-1 pure-u-sm-16-24 pure-u-md-12-24 pure-u-lg-16-24 l-box">
+            	  
+                    	  <h1>Leturgerð og stærð</h1>
+    
+                    	<p>Wisdom Pet Medicine is a state-of-the-art veterinary hospital,   featuring the latest in diagnostic and surgical equipment, and a staff   of seasoned veterinary specialists in the areas of general veterinary   medicine and surgery, oncology, dermatology, orthopedics, radiology,   ultrasound, and much more. We also have a 24-hour emergency clinic in   the event your pet needs urgent medical care after regular business   hours.</p>
+                    	<p>At Wisdom, we strive to be your pet&rsquo;s medical experts from youth   through the senior years. We build preventative health care plans for   each and every one of our patients, based on breed, age, and sex, so   that your pet receives the most appropriate care at crucial milestones   in his or her life. Our overarching goal is to give your pet the best   shot possible at a long and healthy life, by practicing simple   preventative care. We even provide an online Pet Portal where you can   view all your pet&rsquo;s diagnostic results, treatment plans, vaccination and   diagnostic schedules,  prescriptions, and any other health records.</p>
+            	  
+            	  
+            	   </div>
+            	   
+            	    <div class="pure-u-1 pure-u-sm-1 pure-u-md-12-24 pure-u-lg-8-24 l-box">
+            	   
+                    <img src="img/kitten.jpg">
+              
+
+                	</div>
+            	</section>
+            	<!-- nested row 2-->
+	            <section class="pure-g">
+	            
+	                <div class="pure-u-1 pure-u-sm-12-24 pure-u-md-12-24 pure-u-lg-6-24 l-box">
+	              
+	                    <h4><span class="glyphicon glyphicon-pushpin"></span> Vaccinations</h4>
+	                    <p>Dogs, cats, rats and snakes are susceptible to a variety of illnesses that can be completely prevented by following the appropriate vaccination schedule.</p>
+	                    <p><a href="#" class=" ">Read more >></a></p>
+	                </div>
+	              
+	               
+	                <div class="pure-u-1 pure-u-sm-12-24 pure-u-md-12-24 pure-u-lg-6-24 l-box">
+	                
+	                    <h4><span class="glyphicon glyphicon-ok"></span> Checkups</h4>
+	                    <p>Regular checkups are a key factor in pet wellness, and can often unearth problems that could lead to health issues down the road.  </p>
+	                    <p><a href="#" class=" ">Read more >></a></p>
+	                </div>
+	             
+	               
+	                <div class="pure-u-1 pure-u-sm-12-24 pure-u-md-12-24 pure-u-lg-6-24 l-box">
+	               
+	                    <h4><span class="glyphicon glyphicon-heart"></span> Senior Pets</h4>
+	                    <p>Senior pets generally require more medical attention than their younger counterparts, just as senior humans do. So when is a pet considered “senior”? </p>
+	                    <p><a href="#" class=" ">Read more >></a></p>
+	                </div>
+	                
+	               
+	                <div class="pure-u-1 pure-u-sm-12-24 pure-u-md-12-24 pure-u-lg-6-24 l-box">
+	                
+	            		<h4><span class="glyphicon glyphicon-cutlery"></span> Diet Plans</h4>
+	            		<p>Wisdom veterinarians have all had extensive training in pet nutrition and are your best resources when considering changing your pet’s diet. </p>
+	             		<p><a href="#" class=" ">Read more >></a></p>
+	                 </div>
+	                 
+	            </section><!-- end nested row -->
+	        </article>
+	        <!-- row 4 -->
+
+	        <aside class=" pure-u-1 pure-sm-1 pure-u-md-7-24 pure-u-lg-6-24 ">
+	         <div class="l-box">
+        		<h3>Keeping your pet's chompers clean and healthy</h3>
+            	<p>You know the importance of brushing your own teeth, but did you know that dogs and cats also need regular attention to their pearly whites? Poor dental hygiene in pets can lead to periodontal disease, a bacterial infection which causes bad breath, drooling, tooth decay, and tooth loss.</p>
+            	<p>As always, if you have questions about your pet’s dental or health care, please <a href="#">contact Wisdom Pet Medicine</a> for advice.</p>
+            	</div>
+         	</aside><!-- end row 4 -->
+        </section>
+        <!-- row 5 -->
+        <footer class="pure-u-1 l-box">
+            <p><small>This not a real veterinary medicine site, and is not meant to diagnose or offer treatment. Please see your veterinarian for all matters related to your pet's health.</small></p>
+            <p><small>Wisdom Pet Medicine is a training brand owned by lynda.com.</small></p>
+        </footer>
+        <!-- javascript -->
+	    <script src=""></script>
+    </body>
+</html>
